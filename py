@@ -1,14 +1,15 @@
+# interface gráfica do usuário (GUI) tk OS sistema operacional
 import tkinter as tk
 import os
 
 # função para obter o relatório de configuração de IP usando o comando "ipconfig"
 def get_ip_config():
-    ip_config = os.popen("ipconfig").read()
+    ip_config = os.popen("ipconfig").read() # ipconfig mesmo comando utilizado no cmd windows
     return ip_config
 
 # função para executar um teste de ping usando o comando "ping"
 def ping_host(host):
-    ping_result = os.popen(f"ping {host}").read()
+    ping_result = os.popen(f"ping {host}").read() # ping mesmo comando utilizado no cmd windows
     return ping_result
 
 # cria a janela principal
